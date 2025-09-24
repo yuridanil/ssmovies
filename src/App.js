@@ -20,10 +20,10 @@ function App() {
     ));
 
   const page = 1;
-  const limit = 20;
-//  const [movies, setMovies] = useState(testdata.docs);
+  const limit = 100;
+  //  const [movies, setMovies] = useState(testdata.docs);
   const [movies, setMovies] = useState([]);
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState(localStorage.getItem("searchValue"));
 
   const handleInstallClick = async (e) => {
     if (!installPrompt) {
@@ -36,6 +36,7 @@ function App() {
 
   const handleSearchChange = (e) => {
     setSearchValue(e.target.value);
+    localStorage.setItem("searchValue", e.target.value);
   };
 
   const handleSearchClick = (e) => {

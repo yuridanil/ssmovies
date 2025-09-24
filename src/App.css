@@ -1,10 +1,13 @@
 .searchbar {
+  position: sticky;
   display: flex;
   flex-wrap: wrap;
+  top: 0;
   padding: 10px;
   gap: 10px;
   justify-content: center;
   align-items: center;
+  background-color: #000000;
 }
 
 .searchtext {
@@ -17,7 +20,8 @@
   outline: none;
 }
 
-.searchbutton, .install {
+.searchbutton,
+.install {
   display: flex;
   height: 50px;
   min-width: 200px;
