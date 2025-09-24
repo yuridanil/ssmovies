@@ -1,0 +1,66 @@
+.movieitem {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  background-color: #ffffff;
+  padding: 0.3rem;
+}
+
+.movieposter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #888888;
+}
+
+.movieinfo {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 15rem;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.moviename {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0.3rem 0 0 0;
+}
+
+.movienamealt {
+  display: flex;
+  font-size: 16px;
+}
+
+.moviedetails {
+  display: flex;
+  font-size: 18px;
+}
+
+.moviegenre {
+  display: flex;
+  font-size: 16px;
+  color: #888888;
+}
+
+.movierating {
+  display: flex;
+  font-size: 14px;
+}
+
+.moviedesc {
+  display: flex;
+  font-size: 14px;
+  color: #888888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: flex-start;
+  margin: 0 0 0.3rem 0;
+}

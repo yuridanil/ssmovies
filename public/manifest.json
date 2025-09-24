@@ -1,0 +1,43 @@
+{
+  "name": "SS Movies",
+  "short_name": "SS Movies",
+  "description": "SS Movies",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screen_wide.png",
+      "sizes": "640x320",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SS Movies"
+    },
+    {
+      "src": "screen_narrow.png",
+      "sizes": "320x640",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "SS Movies"
+    }
+  ],
+  "id": ".",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "protocol_handlers": [
+    {
+      "protocol": "web+tea",
+      "url": "/tea?type=%s"
+    },
+    {
+      "protocol": "web+coffee",
+      "url": "/coffee?type=%s"
+    }
+  ]
+}

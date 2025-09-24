@@ -1,0 +1,39 @@
+.searchbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchtext {
+  display: flex;
+  line-height: 48px;
+  width: 400px;
+  font-size: 26px;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+}
+
+.searchbutton, .install {
+  display: flex;
+  height: 50px;
+  min-width: 200px;
+  font-size: 26px;
+  font-weight: bold;
+  border: 0;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.movielist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+}
