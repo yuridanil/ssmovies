@@ -56,7 +56,8 @@ function App() {
 
   const setResults = (data) => {
     console.log(data);
-    let docs = data.docs.sort((a, b) => ((b.isSeries ? 0 : 10000) + b.year) - ((a.isSeries ? 0 : 10000) + a.year));
+    // let docs = data.docs.sort((a, b) => ((b.isSeries ? 0 : 10000) + b.year) - ((a.isSeries ? 0 : 10000) + a.year));
+    let docs = data.docs.sort((a, b) => ((b.isSeries ? 0 : 10000) + b.rating.imdb) - ((a.isSeries ? 0 : 10000) + a.rating.imdb));
     setMovies(docs);
   }
 
